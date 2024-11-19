@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/dracula.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h2>
+            <strong>Phishing Awareness Training</strong>
+          </h2>
+          <h4>Protecting Your Digital Security</h4>
+        </section>
+
+        <section>
+          <h3>
+            <strong>What We'll Cover Today</strong>
+          </h3>
+          <section>
+            <ul>
+              <li>Understanding phishing attacks</li>
+              <li class="fragment">Common types of phishing</li>
+              <li class="fragment">Real-world examples</li>
+              <li class="fragment">Recognition techniques</li>
+              <li class="fragment">Best practices</li>
+              <li class="fragment">Interactive scenarios</li>
+              <li class="fragment">Response procedures</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <h3>
+            <strong>What is Phishing?</strong>
+          </h3>
+          <section>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Example_phishing_email.svg/386px-Example_phishing_email.svg.png" alt="Phishing Email Example">
+            <p>
+              Phishing is a cyber attack that masquerades as legitimate communication to steal sensitive information.
+            </p>
+          </section>
+          <section>
+            <ul>
+              <li>Cyber attack masquerading as legitimate communication</li>
+              <li>Goal: Steal sensitive information</li>
+              <li>Uses social engineering tactics</li>
+              <li>Can target individuals or organizations</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <h3>
+            <strong>The Cost of Phishing</strong>
+          </h3>
+          <ul>
+            <li><strong><em>83%</em></strong> of organizations experienced phishing attacks in 2023</li>
+            <li class="fragment">Average cost of a data breach: <strong><em>$4.35 million</em></strong></li>
+            <li class="fragment"><strong><em>95%</em></strong> of cybersecurity breaches due to human error</li>
+            <li class="fragment"><strong><em>Billions lost</em></strong> annually to phishing scams</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>
+            <strong>Types of Phishing Attacks</strong>
+          </h3>
+          <ol>
+            <li>Email Phishing</li>
+            <li class="fragment">Spear Phishing</li>
+            <li class="fragment">Whaling</li>
+            <li class="fragment">Smishing (SMS Phishing)</li>
+            <li class="fragment">Vishing (Voice Phishing)</li>
+            <li class="fragment">Clone Phishing</li>
+            <li class="fragment">Website Spoofing</li>
+          </ol>
+        </section>
+
+        <section>
+          <h3>
+            <strong>Email Phishing Deep Dive</strong>
+          </h3>
+          <p>Common characteristics:</p>
+          <ul>
+            <li>Urgency</li>
+            <li>Generic greetings</li>
+            <li>Poor grammar</li>
+            <li>Suspicious sender addresses</li>
+            <li>Unusual requests</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>
+            <strong>Real Example #1: Banking Scam</strong>
+          </h3>
+          <section>
+            <pre>
+              <code class="language-text" data-trim data-noescape>
+                From: secure@citizensbank.security-verify.com
+                Subject: Unauthorized Access Detected
+                Date: [Current Date]
+
+                Dear Valued Customer,
+
+                We have detected unusual activity on your account.
+                Your account has been temporarily limited for your protection.
+
+                Immediate action required:
+                → Click here to verify your identity
+                → Update your security information
+                → Restore full account access
+
+                Warning: Failure to verify within 24 hours will result in account suspension.
+
+                Best regards,
+                CitizensBank Security Team
+              </code>
+            </pre>
+          </section>
+          <section>
+            <h4 style="color: red;">
+              <u>Red Flags</u>
+            </h4>
+            <ul>
+              <li class="fragment">Suspicious domain</li>
+              <li class="fragment">Urgent language</li>
+              <li class="fragment">Threatening consequences</li>
+              <li class="fragment">Generic greeting</li>
+              <li class="fragment">Requesting immediate action</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <h3>
+            <strong>Real Example #2: Package Delivery</strong>
+          </h3>
+          <section>
+            <pre>
+              <code class="language-text" data-trim data-noescape>
+                From: delivery.notification@fedex-shipping-update.com
+                Subject: Package Delivery Failed - Action Required
+                Date: [Current Date]
+
+                Tracking Number: FDX-7891234
+
+                Dear Customer,
+
+                We attempted to deliver your package today but were
+                unable to complete the delivery due to an incorrect address.
+
+                To reschedule your delivery:
+                1. Download and review attached delivery form
+                2. Confirm your address details
+                3. Pay rescheduling fee of $2.99
+
+                Click Here to Process Rescheduling
+
+                FedEx Delivery Services
+              </code>
+            </pre>
+          </section>
+          <section>
+            <h4 style="color: red;">
+              <u>Red Flags</u>
+            </h4>
+            <ul>
+              <li class="fragment">Small fee request</li>
+              <li class="fragment">Unusual domain</li>
+              <li class="fragment">Unexpected delivery</li>
+              <li class="fragment">Clickable link</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <h3>
+            <strong>Real Example #3: Spear Phishing</strong>
+          </h3>
+          <section>
+            <pre>
+              <code class="language-text" data-trim data-noescape>
+                From: jennifer.moore@company-hr-department.com
+                Subject: Urgent: Employee Benefits Update Required
+                Date: [Current Date]
+
+                Hi [Employee Name],
+
+                Due to recent changes in our benefits provider, all employees must update their information by end of day today. This is mandatory for continued coverage.
+
+                Required actions:
+                1. Download the attached form: "Benefits_Update_2024.doc"
+                2. Complete all fields
+                3. Submit with your SSN and DOB for verification
+
+                Please complete ASAP to avoid benefits interruption.
+
+                Best regards,
+                Jennifer Moore
+                HR Benefits Coordinator
+              </code>
+            </pre>
+          </section>
+          <section>
+            <h4 style="color: red;">
+              <u>Red Flags</u>
+            </h4>
+            <ul>
+              <li class="fragment">Urgency</li>
+              <li class="fragment">Request for sensitive information</li>
+              <li class="fragment">Suspicious domain</li>
+              <li class="fragment">Unusual attachment</li>
+              <li class="fragment">Pressure tactics</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <h3>
+            <strong>Real Example #4: Social Media</strong>
+          </h3>
+          <section>
+            <pre>
+              <code class="language-text" data-trim data-noescape>
+                Instagram Direct Message:
+
+                Hi! I'm a talent scout for major brands.
+                I noticed your profile and think you'd be perfect
+                for our next campaign! We're paying $500 per post.
+
+                Click here to apply: bit.ly/insta-modeling-opportunity
+
+                Hurry, applications close today!
+              </code>
+            </pre>
+          </section>
+          <section>
+            <h4 style="color: red;">
+              <u>Red Flags:</u>
+            </h4>
+            <ul>
+              <li class="fragment">Unsolicited opportunity</li>
+              <li class="fragment">Too good to be true</li>
+              <li class="fragment">Urgent deadline</li>
+              <li class="fragment">Shortened URL</li>
+              <li class="fragment">Requesting immediate action</li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <h3>
+            <strong>Website Spoofing Example</strong>
+          </h3>
+          <em>Legitimate URL vs Phishing URLs:</em>
+          <ul>
+            <li>✅ www.paypal.com</li>
+            <li>❌ www.paypa1.com</li>
+            <li>❌ www.paypal.secure-verify.com</li>
+            <li>❌ www.paypal-account.com</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>
+            <strong>Common Red Flags Checklist</strong>
+          </h3>
+          <section>
+            <h4>✉️ Email Signs:</h4>
+            <ul>
+              <li>Mismatched sender addresses</li>
+              <li>Generic greetings</li>
+              <li>Poor grammar/spelling</li>
+              <li>Urgent language</li>
+              <li>Unusual requests</li>
+              <li>Suspicious attachments</li>
+            </ul>
+          </section>
+          <section>
+            <h4>🌐 Website Signs:</h4>
+            <ul>
+              <li>Slight URL variations</li>
+              <li>Missing HTTPS</li>
+              <li>Poor design quality</li>
+              <li>Pop-up warnings</li>
+              <li>Request for excessive info</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <h2>
+            <strong>Best Practices</strong>
+          </h2>
+          <section>
+            <ul>
+              <li>Verify Sender
+                <ul>
+                  <li>Check email address carefully</li>
+                  <li>Cross-check with known contacts</li>
+                </ul>
+              </li>
+              <li>Hover Over Links
+                <ul>
+                  <li>Reveal full URL before clicking</li>
+                </ul>
+              </li>
+              <li>Do Not Share Sensitive Info
+                <ul>
+                  <li>Avoid sharing personal details via email or message</li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <ul>
+              <li>Use Multi-Factor Authentication
+                <ul>
+                  <li>Enhance account security</li>
+                </ul>
+              </li>
+              <li>Report Suspicious Emails
+                <ul>
+                  <li>Inform IT/security team immediately</li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <h2>
+            <strong>Interactive Scenario #1</strong>
+          </h2>
+          <section>
+            <p>Imagine you receive this email:</p>
+            <pre>
+              <code class="language-text" data-trim data-noescape>
+                From: it-support@company.com
+                Subject: Important: Password Update Required
+                Date: [Current Date]
+
+                Dear [Your Name],
+
+                Our IT team has detected a security issue and is asking all
+                employees to update their passwords immediately to prevent
+                unauthorized access.
+
+                Please click the link below to update your password now:
+
+                [Update Password](http://suspiciouslink.com)
+
+                Thank you for your cooperation.
+
+                Best regards,
+                IT Support Team
+              </code>
+            </pre>
+          </section>
+          <section>
+            <h3>
+              <em>What should you do?</em>
+            </h3>
+            <ul>
+              <li class="fragment">Hover over the link to check the URL</li>
+              <li class="fragment">Verify sender address</li>
+              <li class="fragment">Contact IT directly using known contact info</li>
+              <li class="fragment">Do not click the link</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <h2>
+            <strong>Interactive Scenario #2</strong>
+          </h2>
+          <section>
+            <p>You receive a text message:</p>
+            <pre>
+              <code class="language-text" data-trim data-noescape>
+                From: [Local Bank]
+
+                [Security Alert]:
+                Your account has been temporarily locked due to suspicious activity.
+                Please click the link below to unlock your account:
+
+                [http://secure-bank-login.com]
+              </code>
+            </pre>
+          </section>
+          <section>
+            <h3>
+              <em>What should you do?</em>
+            </h3>
+            <ul>
+              <li class="fragment">Do not click the link</li>
+              <li class="fragment">Verify message with your bank</li>
+              <li class="fragment">Check your account via official banking app/website</li>
+              <li class="fragment">Report the message to your bank</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <h2>
+            <strong>Reporting Phishing Attacks</strong>
+          </h2>
+          <ol>
+            <li>Do not click any links or download attachments</li>
+            <li>Forward the email/message to your IT/security team</li>
+            <li>Include headers if forwarding an email</li>
+            <li>Delete the suspicious email/message</li>
+            <li>Run a virus scan if you've interacted with the email</li>
+          </ol>
+        </section>
+
+        <section>
+          <h1>
+            <strong>Q&A Session</strong>
+          </h1>
+          <p>Got questions ? Let's discuss.</p>
+        </section>
+
+        <section>
+          <h2>
+            <strong>Thank You !</strong>
+          </h2>
+          <p>Stay vigilant and secure.</p>
+        </section>
+      </div>
+    </div>
+
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
